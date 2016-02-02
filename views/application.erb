@@ -1,0 +1,42 @@
+
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Contact Me</title>
+    <link rel="stylesheet" href="/style.css">
+  </head>
+  <style>
+  body {
+    background-color: <%= session[:colour] %>
+  }
+  </style>
+  <body>
+    <form action="/" method="POST">
+    <div>
+    <label>Colour</label>
+
+    <input type="radio" name="colour" value="red"> red
+    <input type="radio" name="colour" value="green"> green
+    <input type="radio" name="colour" value="blue"> blue
+    <input type="submit" value="submit">
+  </div>
+</form>
+    <a href="/">Home</a> |
+    <a href="/special">Special</a> |
+    Hello <%= session[:name] %> |
+    You visited home page: <%= session[:count] %>
+    <hr>
+
+        <!-- <div class="red"> RED
+        </div>
+
+        <div class="green"> GREEN
+        </div>
+
+        <div class="blue"> BLUE
+        </div> -->
+    <%= yield %>
+  </body>
+</html>

@@ -1,0 +1,46 @@
+<h1>Contact Me</h1>
+
+<form action="/contact" method="POST">
+
+  <div>
+    <label for="full-name">Full Name</label>
+    <input type="text" id="full-name" name="full_name" placeholder="e.g. John Smith">
+  </div>
+  <div>
+    <label for="email">Email</label>
+    <input type="email" id="email" name="email" placeholder="e.g. john@example.com">
+  </div>
+  <div>
+    <label>Department</label>
+
+    <input type="radio" name="department" value="sales"> Sales
+    <input type="radio" name="department" value="marketing"> Marketing
+    <input type="radio" name="department" value="technical"> Technical
+
+
+
+  </div>
+
+  <div>
+    <input type="checkbox" name="urgent">Urgent
+  </div>
+
+  <div>
+    <select name="category">
+      <option value="art">Art</option>
+      <option value="science">Science</option>
+      <option value="sports">Sports</option>
+    </select>
+  </div>
+
+  <div>
+    <textarea name="message"></textarea>
+  </div>
+
+  <input type="hidden" name="id" value="123">
+
+
+  <input type="submit" value="Contact Us">
+</form>
+
+<img src="/images/coffee.jpg">
